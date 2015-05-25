@@ -1,0 +1,263 @@
+<!--================= main start ================-->
+<div id="main">
+  <div class="page-background">
+    <div id="video-container">
+      <div class="bg" style="background-image:url(images/bg/1.jpg)"></div>
+      <div id="P3" class="player video-container" data-property="{videoURL:'ZouARplh7iY',containment:'#video-container',autoPlay:true, mute:true, startAt:0, showControls:true, opacity:1}"></div>
+      <div class="fullscene-close"><span class="transition2"></span><i class="fa fa-times"></i> </div>
+    </div>
+    <div class="overlay"></div>
+  </div>
+  <!--================= header start ================-->
+  <div  id="header">
+    <div class="container">
+      <div class="widget-holder">
+        <div class="widget">
+          <ul>
+            <li>
+              <a class="show-info transition"><span class="transition2"></span><i class="fa fa-info "></i></a>
+            </li>
+            <li>
+              <a class="show-twitter transition"><span class="transition2"></span><i class="fa fa-twitter "></i></a>
+            </li>
+            <li>
+              <a class="selectMe shareSelector transition"><span class="transition2"></span><i class="fa fa-share-alt "></i></a>
+            </li>
+          </ul>
+        </div>
+        <ul class="p-info not-vis">
+          <li>
+            <span>Name</span>
+            <h5>ALAN SMITH</h5>
+          </li>
+          <li>
+            <span>Date of birth</span>
+            <h5>25.05.1986</h5>
+          </li>
+          <li>
+            <span>E-mail</span>
+            <h5>yourmail@domain.com</h5>
+          </li>
+          <li>
+            <span>Phone</span>
+            <h5>987-5643-210</h5>
+          </li>
+        </ul>
+      </div>
+      <div class="top-content">
+        <div class="grid-half">
+          <div class="header-photo"><img src="images/photos/2.jpg"  alt=""></div>
+          <h2>Alan Smith</h2>
+          <div class="clear"></div>
+          <h4>Web Developer</h4>
+        </div>
+        <div class="grid-half">
+          <div class="header-decor"><span></span></div>
+        </div>
+      </div>
+      <div class="twitter-feed-holder">
+        <div class="twitter-feed">
+          <!-- Twitter Slider -->
+          <div id="twitter-feed"></div>
+          <div class="customNavigation">
+            <a class="btn prev-slide transition"><i class="fa fa-angle-left"></i></a>
+            <a class="btn next-slide transition"><i class="fa fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation -->
+      <%- partial ('partials/_navigation.ejs') %>
+    </div>
+  </div>
+  <!-- header end-->
+  <div class="clear"></div>
+  <!--================= wrapper start ================-->
+  <div id="wrapper">
+    <!--================= content-holder start ================-->
+    <div class="content-holder" id="dunamic-content">
+      <div class="container">
+        <!--content Start -->
+        <section class="content">
+          <div class="anim-content">
+            <div class="grid-full">
+              <h3 class="section-title"> My Work</h3>
+              <div class="clear"></div>
+              <div class="separator"></div>
+            </div>
+            <div class="page-box">
+              <div class="grid-full">
+                <div id="options">
+                  <ul id="filters" class="option-set" data-option-key="filter">
+                    <li class="filter transition actcat " data-filter="all">All</li>
+                    <li class="filter transition" data-filter="category_1">Web </li>
+                    <li class="filter transition" data-filter="category_2">Design</li>
+                    <li class="filter transition" data-filter="category_3">Branding</li>
+                  </ul>
+                </div>
+                <div class="portfolio-holder">
+                  <ul id="folio_container">
+                    <!-- 1 project -->
+                    <li class="box grid-2  notvisible  mix category_1 mix_all">
+                      <img src="images/folio/1.jpg" class="respimg transition" alt="" title="">
+                      <span class="raster"></span>
+                      <div class="work-info">
+                        <h4>Nulla tincidunt</h4>
+                      </div>
+                      <a href="portfolio-single.html" class="ajax"><i class="fa fa-plus"></i></a>
+                    </li>
+                    <!-- 2 project -->
+                    <li class="box grid-2  notvisible  mix category_2 mix_all">
+                      <img src="images/folio/1.jpg" class="respimg transition" alt="" title="">
+                      <span class="raster"></span>
+                      <div class="work-info">
+                        <h4>Eiusmod tempor</h4>
+                      </div>
+                      <a href="portfolio-single2.html" class="ajax"><i class="fa fa-plus"></i></a>
+                    </li>
+                    <!-- 3 project -->
+                    <li class="box grid-2  notvisible  mix category_3 mix_all">
+                      <img src="images/folio/1.jpg" class="respimg transition" alt="" title="">
+                      <span class="raster"></span>
+                      <div class="work-info">
+                        <h4>Vestibulum accumsan</h4>
+                      </div>
+                      <a href="portfolio-single3.html" class="ajax"><i class="fa fa-plus"></i></a>
+                    </li>
+                    <!-- 4 project -->
+                    <li class="box grid-2  notvisible  mix category_1 mix_all">
+                      <img src="images/folio/1.jpg" class="respimg transition" alt="" title="">
+                      <span class="raster"></span>
+                      <div class="work-info">
+                        <h4>Pellentesque</h4>
+                      </div>
+                      <a href="portfolio-single4.html" class="ajax"><i class="fa fa-plus"></i></a>
+                    </li>
+                    <!-- 5 project -->
+                    <li class="box grid-2  notvisible  mix category_2 mix_all">
+                      <img src="images/folio/1.jpg" class="respimg transition" alt="" title="">
+                      <span class="raster"></span>
+                      <div class="work-info">
+                        <h4>laoreet sed</h4>
+                      </div>
+                      <a href="portfolio-single.html" class="ajax"><i class="fa fa-plus"></i></a>
+                    </li>
+                    <!-- 6 project -->
+                    <li class="box grid-2  notvisible  mix category_3 mix_all">
+                      <img src="images/folio/1.jpg" class="respimg transition" alt="" title="">
+                      <span class="raster"></span>
+                      <div class="work-info">
+                        <h4>Eiusmod Pellentesque</h4>
+                      </div>
+                      <a href="portfolio-single2.html" class="ajax"><i class="fa fa-plus"></i></a>
+                    </li>
+                    <!-- 7 project -->
+                    <li class="box grid-2  notvisible  mix category_1 mix_all">
+                      <img src="images/folio/1.jpg" class="respimg transition" alt="" title="">
+                      <span class="raster"></span>
+                      <div class="work-info">
+                        <h4>Pellentesque tempor</h4>
+                      </div>
+                      <a href="portfolio-single3.html" class="ajax"><i class="fa fa-plus"></i></a>
+                    </li>
+                    <!-- 8 project -->
+                    <li class="box grid-2  notvisible  mix category_2 mix_all">
+                      <img src="images/folio/1.jpg" class="respimg transition" alt="" title="">
+                      <span class="raster"></span>
+                      <div class="work-info">
+                        <h4>Ttempor</h4>
+                      </div>
+                      <a href="portfolio-single4.html" class="ajax"><i class="fa fa-plus"></i></a>
+                    </li>
+                    <!-- 9 project -->
+                    <li class="box grid-2  notvisible  mix category_3 mix_all">
+                      <img src="images/folio/1.jpg" class="respimg transition" alt="" title="">
+                      <span class="raster"></span>
+                      <div class="work-info">
+                        <h4>Eiusmod  </h4>
+                      </div>
+                      <a href="portfolio-single.html" class="ajax"><i class="fa fa-plus"></i></a>
+                    </li>
+                    <!-- 10 project -->
+                    <li class="box grid-2  notvisible  mix category_1 mix_all">
+                      <img src="images/folio/1.jpg" class="respimg transition" alt="" title="">
+                      <span class="raster"></span>
+                      <div class="work-info">
+                        <h4>Xonvallis felis</h4>
+                      </div>
+                      <a href="portfolio-single2.html" class="ajax"><i class="fa fa-plus"></i></a>
+                    </li>
+                    <!-- 11 project -->
+                    <li class="box grid-2  notvisible  mix category_2 mix_all">
+                      <img src="images/folio/1.jpg" class="respimg transition" alt="" title="">
+                      <span class="raster"></span>
+                      <div class="work-info">
+                        <h4>Donec in commodo</h4>
+                      </div>
+                      <a href="portfolio-single3.html" class="ajax"><i class="fa fa-plus"></i></a>
+                    </li>
+                    <!-- 12 project -->
+                    <li class="box grid-2  notvisible  mix category_3 mix_all">
+                      <img src="images/folio/1.jpg" class="respimg transition" alt="" title="">
+                      <span class="raster"></span>
+                      <div class="work-info">
+                        <h4>malesuada mauris</h4>
+                      </div>
+                      <a href="portfolio-single4.html" class="ajax"><i class="fa fa-plus"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="page-box">
+              <div class="grid-full">
+                <div class="subscride-box">
+                  <div class="grid-half">
+                    <p class="align-text"><span class="color-text">Subscribe</span> to learn about my new projects</p>
+                  </div>
+                  <div class="grid-half">
+                    <div class="subcribe">
+                      <fieldset>
+                        <form class="subscriptionForm" method="post">
+                          <input id="subscriptionForm" class="inputForm" type="text" value="Enter Your Email Address" onFocus="if (this.value=='Enter Your Email Address') this.value=''" onBlur="if (this.value==''){this.value='Enter Your Email Address'}" />
+                          <input type="submit" id="submitButton" class="transition" value="Send">
+                        </form>
+                        <div id="success">Thanks for your subscription</div>
+                        <div id="error">Please enter a valid email address</div>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--content end -->
+      </div>
+      <div class="clear"></div>
+      <!--================= Footer start ================-->
+      <div class="container">
+        <footer>
+          <div class="footer-logo"><img src="images/logo-small.png" alt=""></div>
+          <div class="grid-full">
+            <div class="policy-box">
+              <p>&copy; 2014 All Rights Reserved. <br class="only-mobile"> Made with <i class="fa fa-heart-o"></i> by <a class="color-text" href="http://themeforest.net/user/kwst">KWST</a></p>
+            </div>
+            <div class="to-top-box"><a href="#main" class="scroll-btn transition"><i class="fa fa-angle-up"></i></a></div>
+          </div>
+        </footer>
+      </div>
+      <div class="container">
+        <ul class="social-list">
+          <li><a href="#"  target="_blank" class="transition2"><span class="transition2"></span><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"  target="_blank" class="transition2"><span class="transition2"></span><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"  target="_blank" class="transition2"><span class="transition2"></span><i class="fa fa-dribbble"></i></a></li>
+          <li><a href="#"  target="_blank" class="transition2"><span class="transition2"></span><i class="fa fa-pinterest-square"></i></a></li>
+        </ul>
+        <div class="fullscene-video"><span class="transition2"></span><i class="fa fa-youtube-play"></i></div>
+      </div>
+    </div>
+    <!-- Content-holder end-->
+  </div>
+  <!-- Wrapper end -->
+</div>
+<!-- Main end -->

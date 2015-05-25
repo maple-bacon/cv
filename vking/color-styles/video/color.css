@@ -1,0 +1,74 @@
+/*------red color-style -------------------------------------------------*/
+::selection {background: #FF6347; color:#666; }
+::-moz-selection {background: #FF6347; color:#666;}
+
+.separator , .single-media  .customNavigation a , .button , .top-content  , .widget ul li a span , .twitter-feed-holder .customNavigation a  , #facts li h3  , .p-info li span , .resume-head  , .resume-item  , .resume-info h5  , .custom-skillbar , .arthref .icon-container ul li:hover span , #options li , .work-info , .box  a  , .project-info li span  , .project-navigation li a  , .custom-image a  , .subscriptionForm input#submitButton , .contact-list li i , #contact-form input[type="submit"] , .post-decor , .search-submit  , .tagcloud a , .pagination a.current-page, .pagination a:hover, .controls button, .to-top-box  a , .social-list li  a span , .ajaxPageSwitchBacklink {
+	background:#FF6347;
+}
+.color-text  , #twitter-feed li a  , nav li a , .num , .services-nav li a span ,  .services-container h3 , .tooltip h5 , #success_page h3 , .policy-box i  , .center-nav:hover{		
+	color:#FF6347;	
+}
+.social-list li  a , nav li > ul , .widget ul li a   {
+	border-bottom:4px solid #FF6347; 
+}
+.share-button {
+	border-left:4px solid #FF6347;
+}
+footer {
+	border-bottom:20px solid #FF6347;
+}
+.services-nav li a {
+	border:20px solid #FF6347;
+}
+
+/*------ blue color-style -------------------------------------------------*/
+ 
+
+
+::selection {background: #0BA4D6; color:#666; }
+::-moz-selection {background: #0BA4D6; color:#666;}
+
+.separator , .single-media  .customNavigation a , .button , .top-content  , .widget ul li a span , .twitter-feed-holder .customNavigation a  , #facts li h3  , .p-info li span , .resume-head  , .resume-item  , .resume-info h5  , .custom-skillbar , .arthref .icon-container ul li:hover span , #options li , .work-info , .box  a  , .project-info li span  , .project-navigation li a  , .custom-image a  , .subscriptionForm input#submitButton , .contact-list li i , #contact-form input[type="submit"] , .post-decor , .search-submit  , .tagcloud a , .pagination a.current-page, .pagination a:hover, .controls button, .to-top-box  a , .social-list li  a span , .ajaxPageSwitchBacklink {
+	background:#0BA4D6;
+}
+.color-text  , #twitter-feed li a  , nav li a , .num , .services-nav li a span ,  .services-container h3 , .tooltip h5 , #success_page h3 , .policy-box i  , .center-nav:hover {		
+	color:#0BA4D6;	
+}
+.social-list li  a , nav li > ul , .widget ul li a   {
+	border-bottom:4px solid #0BA4D6; 
+}
+.share-button {
+	border-left:4px solid #0BA4D6;
+}
+footer {
+	border-bottom:20px solid #0BA4D6;
+}
+.services-nav li a {
+	border:20px solid #0BA4D6;
+}
+
+
+/*------green color-style -------------------------------------------------*/
+ 
+
+::selection {background: #4ED0AA; color:#666; }
+::-moz-selection {background: #4ED0AA; color:#666;}
+
+.separator , .single-media  .customNavigation a , .button , .top-content  , .widget ul li a span , .twitter-feed-holder .customNavigation a  , #facts li h3  , .p-info li span , .resume-head  , .resume-item  , .resume-info h5  , .custom-skillbar , .arthref .icon-container ul li:hover span , #options li , .work-info , .box  a  , .project-info li span  , .project-navigation li a  , .custom-image a  , .subscriptionForm input#submitButton , .contact-list li i , #contact-form input[type="submit"] , .post-decor , .search-submit  , .tagcloud a , .pagination a.current-page, .pagination a:hover, .controls button, .to-top-box  a , .social-list li  a span , .ajaxPageSwitchBacklink {
+	background:#4ED0AA;
+}
+.color-text  , #twitter-feed li a  , nav li a , .num , .services-nav li a span ,  .services-container h3 , .tooltip h5 , #success_page h3 , .policy-box i  , .center-nav:hover {		
+	color:#4ED0AA;	
+}
+.social-list li  a , nav li > ul , .widget ul li a   {
+	border-bottom:4px solid #4ED0AA; 
+}
+.share-button {
+	border-left:4px solid #4ED0AA;
+}
+footer {
+	border-bottom:20px solid #4ED0AA;
+}
+.services-nav li a {
+	border:20px solid #4ED0AA;
+}

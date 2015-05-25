@@ -1,0 +1,48 @@
+<div class="nav-holder">
+  <div class="nav-button">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav>
+    <ul class="navigation">
+      <li>
+        <a href="/" class="ajax transition <%- req.path == '/' ? 'active' : '' %>">
+          <span class="nav-text">Home</span>
+          <span class="transition nav-decor"></span>
+        </a>
+      </li>
+      <li>
+        <a href="/resume" class="ajax transition <%- req.path == '/resume' ? 'active' : '' %>">
+          <span class="nav-text">Resume</span><span class="transition nav-decor"></span>
+        </a>
+      </li>
+      <li>
+        <a href="/work" class="ajax transition <%- req.path == '/work' ? 'active' : '' %>">
+          <span class="nav-text">Work</span><span class="transition nav-decor"></span>
+        </a>
+      </li>
+      <li>
+        <a href="/blog" class="ajax transition <%- req.path == '/blog' ? 'active' : '' %>">
+          <span class="nav-text">Blog</span><span class="transition nav-decor"></span>
+        </a>
+      </li>
+      <li>
+        <a href="/contact" class="ajax transition <%- req.path == '/contact' ? 'active' : '' %>">
+          <span class="nav-text">Contact</span><span class="transition nav-decor"></span>
+        </a>
+      </li>
+      <li class="dropdown">
+        <a>Pages</a>
+        <ul class="transition2">
+          <li><a href="portfolio-single.html" class="ajax transition"><span class="nav-text">Portfolio single</span><span class="transition nav-decor"></span></a></li>
+          <li><a href="portfolio-single2.html" class="ajax transition"><span class="nav-text">Portfolio single 2</span><span class="transition nav-decor"></span></a></li>
+          <li><a href="portfolio-single3.html" class="ajax transition"><span class="nav-text">Portfolio single 3</span><span class="transition nav-decor"></span></a></li>
+          <li><a href="portfolio-single4.html" class="ajax transition"><span class="nav-text">Portfolio single 4</span><span class="transition nav-decor"></span></a></li>
+          <li><a href="blog-single.html" class="ajax transition"><span class="nav-text">Blog single</span><span class="transition nav-decor"></span></a></li>
+          <li><a href="404.html" class="ajax transition"><span class="nav-text">Dynamic 404</span><span class="transition nav-decor"></span></a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
