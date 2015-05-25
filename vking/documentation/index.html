@@ -1,0 +1,529 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>V-King-  Ajax Personal Portfolio & Resume Page</title>
+	
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	
+
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+		a{color:#DE6325;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+		<script src="js/jquery.1.6.4.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushCss.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<script src="js/shBrushPhp.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start - Files</a></li>
+			<li><a href="#colors">Colors</a></li>
+			<li><a href="#structure">Structure</a></li>
+			<li><a href="#ajax">Ajax</a></li>
+			<li><a href="#images">Images</a></li>
+			<li><a href="#icons">Icons</a></li>
+			<li><a href="#contact_form">Contact Form</a></li>
+			<li><a href="#subscribe_form">Subscribe Form</a></li>
+			<li><a href="#video">Video background</a></li>
+			<li><a href="#map">Map</a></li>
+			<li><a href="#twitter">Twitter</a></li>
+			<li><a href="#share">Share</a></li>
+			<li><a href="#seo">Seo</a></li>
+			<li><a href="#sources_credits">Sources & Credits</a></li>
+			<li><a href="#thanks">Thanks</a></li>
+
+		</ol>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>V-King</h1><h2> Ajax Personal Portfolio & Resume Page</h2><hr><ul><li>Created: 15/07/2014</li><li>latest Update: 15/07/2014</li><li>By: KWST</li><li><a href=""></a></li><li>Email: <a href="mailto:support@kwst.net">support@kwst.net</a></li></ul>
+	<p>Thanks for purchasing tempalte and for supporting my work. V-King - Ajax Personal Portfolio & Resume Page. This documentation will not teach you HTML & CSS, it's just showcase of custom elements used in template. This template has four versions background : static , flat , video and slideshow. All versions are divided into folders Also included in the archive selection page version. It is located in the folder "intro"</p>
+<br><br><h3>Files</h3><hr class="notop"><br>
+<p>All site files are divided into folders:<br><br>
+<strong>css folder</strong> - css files that are responsible for the style themes.<br>
+<strong>js folder</strong> - javascript files.<br>
+<strong>php folder</strong> - php files.<br>
+<strong>images folder</strong> - folder that contains all images.<br>
+<strong>twitter folder</strong> - folder that contains twitter plugin.<br>
+<strong>fonts folder</strong> - folder that contains  fonts .<br>
+
+</section>
+
+<section id="colors">
+<h3>Colors</h3>
+<p>By default, 'V-King' has a global color - yellow ( FFD600 ). Also, as you saw in the demonstration included fife color themes - Blue( 0BA4D6)  , Red ( FF6347 ),Green(4ED0AA). <strong>To change the color, you must do the following steps:</strong>
+<br>
+1. Locate the folder css  file <strong>style.css</strong> and open it with your text editor.	
+<br>
+2.In this file, you should find a line responsible for the color theme. Look at the code below.
+<br>
+3.If you want to use the colors presented in this topic - In the folder "color-style" open the file  and copy the code to the color you want, and replace it in the file "style.css".
+<br>
+4. If you want to use your color - just replace the six numbers and letters after the lattice in the file "style.css". Forgot to mention the theme color using hex format. If you want to add color format "rgba" then need to remove the lattice. If you do not know where to find the code of the color you click on this <a href="http://www.color-hex.com/color-palettes/" target="_blank">link</a>.</p>
+
+<pre class="brush: css">
+/*------ color-style -------------------------------------------------*/
+
+::selection {background: #FFD600; color:#666; }
+::-moz-selection {background: #FFD600; color:#666;}
+
+.separator , .single-media  .customNavigation a , .button , .top-content  , .widget ul li a span , .twitter-feed-holder .customNavigation a  , #facts li h3  , .p-info li span , .resume-head  , .resume-item  , .resume-info h5  , .custom-skillbar , .arthref .icon-container ul li:hover span , #options li , .work-info , .box  a  , .project-info li span  , .project-navigation li a  , .custom-image a  , .subscriptionForm input#submitButton , .contact-list li i , #contact-form input[type="submit"] , .post-decor , .search-submit  , .tagcloud a , .pagination a.current-page, .pagination a:hover, .controls button, .to-top-box  a , .social-list li  a span , .ajaxPageSwitchBacklink {
+	background:#FFD600;
+}
+.color-text  , #twitter-feed li a  , nav li a , .num , .services-nav li a span ,  .services-container h3 , .tooltip h5 , #success_page h3 , .policy-box i  , .center-nav:hover {		
+	color:#FFD600;	
+}
+.social-list li  a , nav li > ul , .widget ul li a   {
+	border-bottom:4px solid #FFD600; 
+}
+.share-button {
+	border-left:4px solid #FFD600;
+}
+footer {
+	border-bottom:20px solid #FFD600;
+}
+.services-nav li a {
+	border:20px solid #FFD600;
+}
+
+</pre>
+<p><strong>Please note</strong> - the version of choice color template with video background is a little different so it is in a separate folder </p>
+</section>
+
+
+	
+
+<section id="structure">
+<h3>Structure</h3><hr class="notop">
+
+
+
+<h3>General</h3>
+<p>All content that is dynamically loaded must be between the tags</p>
+
+<pre class="brush: html">
+
+
+  <!--================= wrapper start ================-->
+            <div id="wrapper">
+                <!--================= content-holder start ================-->
+                <div class="content-holder" id="dunamic-content">
+				
+				your content 
+				
+				</div>
+			</div>
+
+</pre>
+
+
+
+<p>And also any section should begin with a tag : </p>
+<pre class="brush: html">
+
+
+ <section class="content">
+ your content 
+ </section>
+
+
+</pre>
+
+
+</section>	
+<section id="ajax">
+<h3>Ajax</h3><hr class="notop">
+
+<p>To dynamically loaded content - you can simply add a link class "ajax". For example: </p>
+<pre class="brush: html">
+
+<a href="resume.html" class="ajax transition">Resume</a>
+
+
+</pre>
+<p>Accordingly to the content page was loaded as usual, this class must be removed .For example: </p>
+<pre class="brush: html">
+
+<a href="resume.html" class="transition">Resume</a>
+
+
+</pre>
+<p>In   Internet Explorer (9) page loaded standard - without Ajax request - in this page is fully displayed and all plug-ins work</p>
+</section>	
+
+
+<section id="images">	
+<h3>Images</h3><hr class="notop">
+<p>All images are in the folder "images".<br>       
+</p>
+<br>
+<h3>How to add and change the background image</h3>
+
+<p>To change the background you can simply change the path in the style rendered in html code, for example : </p>
+<pre class="brush: html">
+<div class="bg " style="background-image:url(images/bg/1.jpg)"></div>
+
+		
+</pre>
+
+
+</section>
+
+<section id="icons">
+	<h3>Icons</h3><hr class="notop">
+<p>	All  icons are generated by the plugin <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">"Font-Awesome"</a>. List of all the icons can be found <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">here</a>. 
+<br>
+To change the icon, you have to copy and paste the code icon at the right place for you. Icons size-five . Read the documentation plugin - it is described in detail how to change the icons size.
+
+</p>
+<p>For example: </p>
+<pre class="brush: html">
+
+<div class="social-links">
+	<ul>
+		<li><a href="#" target="_blank"  class="transition"><i class="fa fa-facebook-square fa-2x"></i><span>Facebook</span></a></li> - increased twice
+		<li><a href="#" target="_blank" class="transition"><i class="fa fa-dribbble fa-3x"></i><span>Dribbble</span></a></li> - tripled
+		<li><a href="#" target="_blank" class="transition"><i class="fa fa-twitter fa-4x"></i><span>Twitter</span></a></li> - quadrupled
+	</ul>
+</div>
+
+</pre>
+
+<p>&nbsp;
+	</p>
+</section>
+
+
+
+
+<section id="contact_form">
+	<h3>Contact Form</h3><hr class="notop">
+<p>
+Find the file "contact" in the folder <strong>php</strong> . In this file, find the line <strong>$address = "example@themeforest.net";</strong> and add you e-mail.</p> 
+<p>How to forward mail to your mailbox ask your Hosting Service Provider. Because providers use different control panel site and I find it hard to predict what you use. Server side script for sending emails is in "contact.php" . Ajax submit is initialized in "scripts.js" file.</p>
+
+</section>
+
+
+
+
+
+
+<section id="subscribe_form">
+	<h3>Subscribe Form</h3><hr class="notop">
+<p>
+	In this case, you do not need to change anything</p>
+<p>To see people who have signed up, simply open the file <strong>users-mail.txt</strong> . It is located in the folder <strong>php</strong> . There you will find all the signatories of people email</p>
+<p> Server side script for sending emails is in "subscription.php" . Ajax submit is initialized in "scripts.js" file.
+	</p>
+	
+<pre class="brush: js">
+
+// Subscribe   ----------------------------------------
+
+	$('.subscriptionForm').submit(function(){		
+		var email = $('#subscriptionForm').val();
+		$.ajax({
+			url:'php/subscription.php',
+			type :'POST',
+			dataType:'json',
+			data: {'email': email},success: function(data){
+				if(data.error){
+					$('#error').fadeIn()
+				}
+				else{
+					$('#success').fadeIn();
+					$("#error").hide();}
+				}
+			});
+		return false
+	});
+	
+	$('#subscriptionForm').focus(function(){
+		$('#error').fadeOut();
+		$('#success').fadeOut();	
+	});
+	
+	$('#subscriptionForm').keydown(function(){	
+		$('#error').fadeOut();
+		$('#success').fadeOut();		
+	});
+
+
+</pre>
+</section>
+<section id="video">
+
+	<h3>Youtube Video background</h3><hr class="notop">
+	<p>A video is played using YouTube.</p>
+<p>To add background video, follow these steps:</p>
+<p>
+1.Open file "index.html" with your text editor;<br>
+</p>
+<p>
+2. Find the line:
+</p>
+3. Find the line<strong> videoURL:'ZouARplh7iY',</strong> and  in single quotes add youtube code<br>
+</p>
+<pre class="brush: html">
+            <div class="page-background">
+				<div id="video-container">
+				<div class="bg" style="background-image:url(images/bg/15.jpg)"></div>		
+					<div id="P3" class="player video-container" data-property="{videoURL:'ZouARplh7iY',containment:'#video-container',autoPlay:true, mute:true, startAt:0, showControls:true, opacity:1}"></div>		
+					<div class="fullscene-close"><span class="transition2"></span><i class="fa fa-times"></i> </div>							
+				</div>			
+                <div class="overlay"></div>
+            </div>
+
+
+
+
+</pre> 
+
+<h3>How to find video code?</h3>
+<p><br>
+1. Go to <a href="http://www.youtube.com/" target="_blank">Youtube</a>.<br>
+2.Under video click to share.<br>
+3. In the screen that appears after <span style="color:red">http://youtu.be/</span>  copy and replace the code.<br>
+</p>
+
+<p>And yet the video does not play on smartphones :( - so if a user comes to your site from a mobile browser - the background is replaced by a picture :)
+	</p>
+<p>&nbsp;
+	</p>
+</section>
+
+<section id="map">
+<h3>Map</h3><hr class="notop">
+<p>Google style maps generated with this code in the file 'scripts.js'.In it marker coordinates, zoom and coordinates of your location.<br> Map marker is changed in a row <span style="color:red"> image: "images/marker.png", </span>.  </p>
+<pre class="brush: js"> 
+
+// Map(   ----------------------------------------	
+
+	$('#map_addresses').gMap({
+		latitude: 40.7688628,
+		longitude: -73.9688209,
+		zoom: 19,
+		maptype: 'ROADMAP',
+		markers:[
+			{
+				latitude: 40.7688628,
+				longitude: -73.9688209,
+			icon: {
+				image: "images/marker.png",
+				iconsize: [99, 50],
+				iconanchor: [45,50]
+			}
+			},
+
+		]
+	});
+
+
+
+</pre>
+
+<h3>How to find the coordinates of Google maps ?</h3>
+<p>1. Go to Google maps<br>
+2. LEFT-click on the place that you want coordinates for.<br>
+3. Notice that there is a small circle which radiates at that place, or the nearest on-street place.<br>
+4. In the top left of the map, a small display box appears, showing the address and lat/long coordinates<br></p>
+<img src="images/map.png">
+<p>You can copy / paste these as text.</p><br>
+<p>if you have all the same did not happen to get the coordinates, click on this <a href="http://www.latlong.net/convert-address-to-lat-long.html" target="_blank">link</a>. And by simply clicking on the map in the first top form you receive the coordinates</p>
+</section>
+<section id="twitter">
+	<h3>Twitter</h3><hr class="notop">
+	
+<p>To configure twitter you need to perform the following steps:<br>
+1. In file scropts.js finde line :<br><br>
+<pre class="brush: js"> 
+
+		$('#twitter-feed').tweet({
+			username: 'yourname',
+			join_text: 'auto',
+			avatar_size: 0,
+			count: 4
+		});
+
+
+
+</pre>
+
+2. Add you name in line <strong>username: 'yourname',</strong><br><br>
+3. In folder "twitter" find file index.php It locate the lines:<br><br>
+<pre class="brush: js"> 
+	/*************************************** config ***************************************/
+
+   // Your Twitter App Consumer Key
+	private $consumer_key = 'Arl0P3IFQcGFXngB7SVYw';
+
+	// Your Twitter App Consumer Secret
+	private $consumer_secret = 'sX9c1Fh8sPiqSuJJUTWdt9pVzOe0wl1jn6mNPZI';
+
+</pre>
+4. Add your consumer_key and consumer_secret<br><br>
+5. how to get keys for twitter ? Watch this video. It explains step by step how to get the key<br><br>
+<iframe width="560" height="315" src="//www.youtube.com/embed/GhT2CQqZAX0" frameborder="0" allowfullscreen></iframe><br><br>
+ </p>
+</section>
+<section id="share">
+<h3>Share your pages</h3><hr class="notop">
+<p>To configure the plugin  in file scripts.js find line :</p>
+<pre class="brush: js"> 		
+	$('.shareSelector').socialShare({
+		social: 'blogger,delicious,digg,facebook,friendfeed,google,linkedin,myspace,pinterest,reddit,stumbleupon,tumblr,twitter,windows,yahoo',
+		whenSelect: true,
+		selectContainer: '.shareSelector',
+		blur: false
+	});	
+	
+</pre>
+<p>You can simply add a comma in line: <strong>social: 'blogger,delicious,digg,facebook,friendfeed,google,linkedin,myspace,pinterest,reddit,stumbleupon,tumblr,twitter,windows,yahoo',</strong>  separated names of social networks</p>
+</section>
+<section id="seo">
+<h3>Seo</h3><hr class="notop">
+
+<p>In this section, I will discuss the basic search engine optimization of your website . </p>
+<p>In seo folder - you can see two files robots.txt and sitemap.xml. It first looks for files that when a search bot visits your website. Copy these files to the root of your site.  </p>
+<p>Next, open the file first robots.txt . And it set the path to the file sitemap.xml . For example: </p>
+<pre class="brush: js"> 		
+User-agent: *
+Disallow: /css
+Sitemap: http://yourdomain.com/Sitemap.xml
+	
+</pre>
+<p>Next, open the file  Sitemap.xml . And it prescribes all the links that exist on our website . For example: </p><br><br>
+<pre class="brush: js"> 		
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+    <url>
+      <loc>http://yourdomain.com/about.html</loc>
+      <changefreq>daily</changefreq>
+    </url>
+    <url>
+      <loc>http://yourdomain.com/team.html</loc>
+      <changefreq>daily</changefreq>
+    </url>
+</urlset>
+	
+</pre>
+<br><br><br><br>
+Also, try to specify the tag title - more keywords for which you want to a search bot to index your site  For example:
+<pre class="brush: html"> 		
+<title>Laris. Multipurpose Responsive Parallax Template</title>
+	
+</pre>
+
+
+
+</section>
+
+<section id="sources_credits">
+	<h3>Sources & Credits</h3><hr class="notop">
+<p>
+	<strong>Fonts</strong><br>
+	http://www.google.com/fonts<br>
+	<br><br>
+	<strong>Photo</strong><br>
+	Aurimas Adomavicius<br>
+	https://www.flickr.com/photos/needoptic
+	<br><br>
+	Dave Hill<br>
+	http://www.davehillphoto.com/
+	<br>
+	<br>
+	Daniel Zedda<br>
+	https://www.flickr.com/photos/astragony/
+	<br>
+
+	</p>
+<p>
+<p>
+	<strong>Icons</strong><br>
+		Font-Awesome<br>
+	http://fortawesome.github.io/Font-Awesome/</p>
+<p>
+<p>
+	<strong>JQuery</strong><br>
+	http://jquery.com</p>
+<p>
+	<strong>JQuery Easing</strong><br>
+	http://gsgd.co.uk/sandbox/jquery/easing/</p>
+<p>
+	<strong>OwlCarousel</strong><br>
+	http://www.owlgraphic.com/owlcarousel/</p>
+
+<p>
+	<strong>YTPlayer</strong><br>
+	http://pupunzi.open-lab.com</p>
+
+<p>
+	<strong>socialShare</strong><br>
+	https://github.com/tolgaergin/social</p>
+	<p>
+	<strong>MIXITUP</strong><br>
+	http://mixitup.io</p>
+
+	<p>
+	<strong> jQuery appear plugin</strong><br>
+	https://github.com/morr/jquery.appear/</p>		
+	
+		<p>
+	<strong> Magnific Popup</strong><br>
+	http://dimsemenov.com/plugins/magnific-popup/</p>	
+			<p>
+	<strong>jquery.gmap</strong><br>
+	http://labs.mario.ec/jquery-gmap/</p>	
+	
+				<p>
+	<strong>jquery.tweet.js</strong><br>
+	https://github.com/StanScates/Tweet.js-Mod</p>
+	
+</section>
+<section id="thanks">
+	<h3>Thanks</h3><hr class="notop">
+<p>
+	Thanks for purchasing template and for supporting my work. If we fail here in this documentation, please e-mail me  <a href="mailto:support@kwst.net">support@kwst.net</a>. If you have a spare time, please go and rate my template. I will apreciate that.</p>
+<p>
+	Thanks</p>
+</section>
+
+	</div>
+</body>
+</html>
