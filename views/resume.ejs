@@ -1,74 +1,6 @@
 <!--================= main start ================-->
 <div id="main">
-  <div class="page-background">
-    <div id="video-container">
-      <div class="bg" style="background-image:url(images/bg/1.jpg)"></div>
-      <div id="P3" class="player video-container" data-property="{videoURL:'ZouARplh7iY',containment:'#video-container',autoPlay:true, mute:true, startAt:0, showControls:true, opacity:1}"></div>
-      <div class="fullscene-close"><span class="transition2"></span><i class="fa fa-times"></i> </div>
-    </div>
-    <div class="overlay"></div>
-  </div>
-  <!--================= header start ================-->
-  <div  id="header">
-    <div class="container">
-      <div class="widget-holder">
-        <div class="widget">
-          <ul>
-            <li>
-              <a class="show-info transition"><span class="transition2"></span><i class="fa fa-info "></i></a>
-            </li>
-            <li>
-              <a class="show-twitter transition"><span class="transition2"></span><i class="fa fa-twitter "></i></a>
-            </li>
-            <li>
-              <a class="selectMe shareSelector transition"><span class="transition2"></span><i class="fa fa-share-alt "></i></a>
-            </li>
-          </ul>
-        </div>
-        <ul class="p-info not-vis">
-          <li>
-            <span>Name</span>
-            <h5>Jason Taylor</h5>
-          </li>
-          <li>
-            <span>Date of birth</span>
-            <h5>05.05.1988</h5>
-          </li>
-          <li>
-            <span>E-mail</span>
-            <h5>Jason.Lee.Taylor@me.com</h5>
-          </li>
-          <li>
-            <span>Phone</span>
-            <h5>8180-4866-8896</h5>
-          </li>
-        </ul>
-      </div>
-      <div class="top-content">
-        <div class="grid-half">
-          <div class="header-photo"><img src="images/photos/2.jpg"  alt=""></div>
-          <h2>Jason Taylor</h2>
-          <div class="clear"></div>
-        </div>
-        <div class="grid-half">
-          <div class="header-decor"><span></span></div>
-        </div>
-      </div>
-      <div class="twitter-feed-holder">
-        <div class="twitter-feed">
-          <!-- Twitter Slider -->
-          <div id="twitter-feed"></div>
-          <div class="customNavigation">
-            <a class="btn prev-slide transition"><i class="fa fa-angle-left"></i></a>
-            <a class="btn next-slide transition"><i class="fa fa-angle-right"></i></a>
-          </div>
-        </div>
-      </div>
-      <!-- Navigation -->
-      <%- partial ('partials/_navigation.ejs') %>
-    </div>
-  </div>
-  <!-- header end-->
+  <%- partial("partials/_header.ejs")%>
   <div class="clear"></div>
   <!--================= wrapper start ================-->
   <div id="wrapper">
@@ -123,6 +55,7 @@
                         <div class="clear"></div>
                         <p class="align-text">Preparing traditional cocktails and espresso based drinks. Responsible for opening and closing duties including cash-up.</p>
                       </div>
+                    </div>
                       <div class="resume-info">
                         <span class="resume-date">Sep '13 - Mar '15</span>
                         <div class="clear"></div>
@@ -138,6 +71,7 @@
                           <div class="clear"></div>
                           <p class="align-text">Arranged artist bookings, venue rental, audio and visual elements, music curation as well as design of promotional content for social media and print. Acted as a liaison for visiting artists and associates, assisting them with accomodation and sightseeing arrangements. </p>
                         </div>
+                      </div>
                         <div class="resume-info">
                           <span class="resume-date">Nov '11 - May '12</span>
                           <div class="clear"></div>
@@ -146,7 +80,7 @@
                         <div class="resume-box-holder">
                           <div class="resume-box">
                             <div class="resume-decor"></div>
-                            <div class="resume-item">N.S., Canada</div>
+                            <div class="resume-item">Nova Scotia, Canada</div>
                             <h6>Service Staff</h6>
                             <div class="clear"></div>
                             <div class="separator float-left"></div>
@@ -222,27 +156,7 @@
         <!--content end -->
       </div>
       <div class="clear"></div>
-      <!--================= Footer start ================-->
-      <div class="container">
-        <footer>
-          <div class="footer-logo"><img src="images/logo-small.png" alt=""></div>
-          <div class="grid-full">
-            <div class="policy-box">
-              <p>&copy; 2014 All Rights Reserved. <br class="only-mobile"> Made with <i class="fa fa-heart-o"></i> by <a class="color-text" href="http://themeforest.net/user/kwst">KWST</a></p>
-            </div>
-            <div class="to-top-box"><a href="#main" class="scroll-btn transition"><i class="fa fa-angle-up"></i></a></div>
-          </div>
-        </footer>
-      </div>
-      <div class="container">
-        <ul class="social-list">
-          <li><a href="#"  target="_blank" class="transition2"><span class="transition2"></span><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"  target="_blank" class="transition2"><span class="transition2"></span><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"  target="_blank" class="transition2"><span class="transition2"></span><i class="fa fa-dribbble"></i></a></li>
-          <li><a href="#"  target="_blank" class="transition2"><span class="transition2"></span><i class="fa fa-pinterest-square"></i></a></li>
-        </ul>
-        <div class="fullscene-video"><span class="transition2"></span><i class="fa fa-youtube-play"></i></div>
-      </div>
+      <%- partial("partials/_footer.ejs")%>
     </div>
     <!-- Content-holder end-->
   </div>
