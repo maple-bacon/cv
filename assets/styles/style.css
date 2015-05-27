@@ -517,7 +517,7 @@ p{
 	position:relative;
 	float:left;
 	width:100%;
-	background:#414146;
+	background:rgba(65, 65, 70,0.7);
 	padding:21px 10px;
 }
 nav {
@@ -594,7 +594,7 @@ nav li:hover  > ul {
 	position: relative;
 	z-index: 1;
 	font-weight: 400;
-	text-transform: uppercase;
+	text-transform: none
 }
 
 /*----- Facts ------------------------------------------------*/
@@ -1846,17 +1846,17 @@ footer {
 	width:100%;
 	margin-top:20px;
 	padding:30px 0;
-	background:rgba(65, 65, 70,0.4);
+	background:rgba(65, 65, 70,0.7);
 	position:relative;
 }
 .footer-logo {
 	position:absolute;
-	top:20px;
-	left:50%;
+	top:-5px;
+	left:48.5%;
 	margin-left:-38px;
 	width:50px;
 	height:46px;
-	opacity:0.3;
+	opacity:1;
 }
 .policy-box {
 	float:left;
