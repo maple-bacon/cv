@@ -229,8 +229,8 @@
   background:#fff;
   bottom:0;
   left:0;
-  -moz-box-shadow:#666666 1px 1px 3px;
-  -webkit-box-shadow:#666666 1px 1px 3px;
+  -moz-box-shadow:#fff666 1px 1px 3px;
+  -webkit-box-shadow:#fff666 1px 1px 3px;
 }
 
 .YTPOverlay.raster{
