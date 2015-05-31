@@ -1,3 +1,8 @@
+// var q = require('q'),
+//     path = require('path'),
+//     juice = require('juice'),
+//     nodemailer = require('nodemailer');
+
 /**
  * ContactController
  *
@@ -10,11 +15,15 @@ module.exports = {
    * `ContactController.send()`
    */
   send: function (req, res) {
+    // req.params['message'] = "Hello";
+    // req.params['name'] = "Mark";
+    // req.params['email'] = "murphy.mark@live.ca";
+
 		var options = {
 			subject: 'Contact Form',
 			message: req.params['message'],
 			from: req.params['name'] + ' <' + req.params['email'] + '>',
-			to: 'jason.lee.taylor@me.com'
+			to: 'murphy.mark@live.ca'
 		};
 
 		var locals = {
@@ -23,12 +32,14 @@ module.exports = {
 			message: req.params['message']
 		};
 
-		EmailService.deliver("contact", options, locals, function (error, info) {
-			
+		var promise = EmailService.deliver("contact", options, locals);
+
+    promise.done(function (info) {
+      return res.send('send() complete!');
 		});
 
-    return res.json({
-      todo: 'send() is not implemented yet!'
-    });
+    promise.fail(function (info) {
+      return res.send('send() failed!');
+		});
   }
 };
