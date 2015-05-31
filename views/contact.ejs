@@ -1,0 +1,67 @@
+<!--================= main start ================-->
+<div id="main">
+  <%- partial("partials/_header.ejs")%>
+  <div class="clear"></div>
+            <!--================= wrapper start ================-->
+            <div id="wrapper">
+                <!--================= content-holder start ================-->
+                <div class="content-holder" id="dunamic-content">
+                    <div class="container">
+                        <!--content Start -->
+                        <section class="content">
+                            <div class="anim-content">
+                                <div class="grid-full">
+                                    <h3 class="section-title"> Contacts</h3>
+                                    <div class="clear"></div>
+                                    <div class="separator"></div>
+                                </div>
+                                <div class="page-box">
+                                    <div class="grid-full">
+                                        <div class="map-box">
+                                            <div id="map_addresses" class="map"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="separator"></div>
+                                    <div class="grid-half">
+                                        <p class="align-text">test123</p>
+                                        <ul class="contact-list">
+                                            <li>
+                                                <i class="fa fa-phone"></i>
+                                                <span class="transition">+818048668896</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-envelope-o"></i>
+                                                <a href="#" class="transition">jason.lee.taylor@me.com</a>
+                                            </li>
+
+                                            <li>
+                                                <i class="fa fa-home"></i>
+                                                <span class="transition"> Halifax, Nova Scotia Canada</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="grid-half">
+                                        <div id="contact-form">
+                                            <div id="message"></div>
+                                            <form method="post" action="php/contact.php" name="contactform" id="contactform">
+                                                <input name="name" type="text" id="name"  onFocus="if(this.value == 'Name') { this.value = ''; }" onBlur="if(this.value == '') { this.value = 'Name'; }" value="Name" >
+                                                <input name="email" type="text" id="email" onFocus="if(this.value == 'E-mail') { this.value = ''; }" onBlur="if(this.value == '') { this.value = 'E-mail'; }" value="E-mail" >
+                                                <textarea name="comments"  id="comments" onFocus="if(this.value == 'Message') { this.value = ''; }" onBlur="if(this.value == '') { this.value = 'Message'; }" >Message</textarea>
+                                                <input type="submit" class="send_message transition" id="submit" value="Send Message" />
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--content end -->
+                    </div>
+                    <div class="clear"></div>
+                    <!--================= Footer start ================-->
+                <%- partial("partials/_footer.ejs")%>
+
+                <!-- Content-holder end-->
+            </div>
+            <!-- Wrapper end -->
+        </div>
