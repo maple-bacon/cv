@@ -8,8 +8,11 @@ var transporter = nodemailer.createTransport(sails.config.mail.smtp);
 
 function send(view, options, locals, callback) {
   var html, text;
-  var callback = callback || function() {};
   var deferred = q.defer();
+
+  if (typeof(callback) !== "function") {
+    callback = function() {};
+  }
 
   options = options || {};
   locals = locals || {};
@@ -18,16 +21,20 @@ function send(view, options, locals, callback) {
     html: function(cb){
       sails.renderView('/email/' + view + '.html', locals, function (error, html) {
         if (error) return cb(error);
-        juice.juiceContent(html, { url: 'file://' + sails.config.appPath }, cb);
+        juice.juiceResources(html, { url: 'file://' + sails.config.appPath }, cb);
       });
     },
-    text: function(cb){
+    text: function(cb) {
+      sails.log("html");
       sails.renderView('/email/' + view + '.text', locals, cb);
     }
   }, done );
 
   function done (error, content) {
-    if (error) return callback(error);
+    if (error) {
+      deferred.reject(error);
+      return callback(error);
+    }
 
     // var options = {
     //   from: sails.config.mail.defaultFromAddress,
@@ -40,14 +47,13 @@ function send(view, options, locals, callback) {
     options.html = content.html;
     options.text = content.text;
 
-    var fail = fail || function() {},
-        done = done || function() {};
-
     transporter.sendMail(options, function(error, info) {
       if (error) {
-        console.log(error);
+        sails.log(error);
+        deferred.reject(error);
       } else {
-        console.log('Message sent: ' + info.response);
+        sails.log('Message sent: ' + info.response);
+        deferred.resolve(info);
       }
 
       callback(error, info);

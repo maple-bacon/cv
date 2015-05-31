@@ -49,9 +49,12 @@ module.exports.routes = {
     view: 'resume'
   },
 
-  '/contact': {
-    view: 'contact'
-  },
+  // '/contact': {
+  //   view: 'contact'
+  // },
+
+  '/contact': 'ContactController.send',
+
   '/work': {
     view: 'work'
   },
