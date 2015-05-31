@@ -33,7 +33,10 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'index'
+    view: 'index',
+    locals: {
+      title: 'Home'
+    }
   },
 
   /***************************************************************************
@@ -46,14 +49,23 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
   '/resume': {
-    view: 'resume'
+    view: 'resume',
+    locals: {
+      title: 'Resume'
+    }
   },
 
   '/contact': {
-    view: 'contact'
+    view: 'contact',
+    locals: {
+      title: 'Contact'
+    }
   },
   '/work': {
-    view: 'work'
+    view: 'work',
+    locals: {
+      title: 'Media'
+    }
   },
   // '/blog': {
   //   view: 'blog'
