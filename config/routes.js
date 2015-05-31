@@ -54,13 +54,17 @@ module.exports.routes = {
       title: 'Resume'
     }
   },
+  
+  'post /contact': 'ContactController.send',
 
-  '/contact': {
+  'get /contact': {
     view: 'contact',
     locals: {
       title: 'Contact'
     }
   },
+
+
   '/work': {
     view: 'work',
     locals: {

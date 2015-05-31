@@ -18,28 +18,29 @@ module.exports = {
     // req.params['message'] = "Hello";
     // req.params['name'] = "Mark";
     // req.params['email'] = "murphy.mark@live.ca";
+    var params = req.params.all();
 
 		var options = {
 			subject: 'Contact Form',
-			message: req.params['message'],
-			from: req.params['name'] + ' <' + req.params['email'] + '>',
-			to: 'murphy.mark@live.ca'
+			message: params.message,
+			from: params.name + ' <' + params.email + '>',
+			to: sails.config.mail.generalInqueriesAddress
 		};
 
 		var locals = {
-			name: req.params['name'],
-			email: req.params['email'],
-			message: req.params['message']
+			name: req.param('name'),
+			email: req.param('email'),
+			message: req.param('message')
 		};
 
 		var promise = EmailService.deliver("contact", options, locals);
 
     promise.done(function (info) {
-      return res.send('send() complete!');
+      return res.send('send complete!');
 		});
 
     promise.fail(function (info) {
-      return res.send('send() failed!');
+      return res.send('send failed!');
 		});
   }
 };

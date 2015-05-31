@@ -44,12 +44,13 @@ module.exports = {
       host: 'smtp.mandrillapp.com',
       port: 587,
       auth: {
-        user: 'your.email@example.com',
-        pass: '74pFfi9qJBRYrUaHEPXT8B'
+        user: 'jason.lee.taylor@me.com',
+        pass: 'E4EI-btXxA242LO2K4faXg'
       }
     },
 
-    defaultFromAdress: 'Jason Taylor <no-reply@jasontaylor.ca>'
+    defaultFromAdress: 'Jason Taylor <no-reply@jasontaylor.ca>',
+    generalInqueriesAddress: 'Jason Taylor <jason.lee.taylor@me.com>'
   }
 
 };

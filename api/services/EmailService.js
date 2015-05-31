@@ -25,7 +25,6 @@ function send(view, options, locals, callback) {
       });
     },
     text: function(cb) {
-      sails.log("html");
       sails.renderView('/email/' + view + '.text', locals, cb);
     }
   }, done );

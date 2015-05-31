@@ -1490,9 +1490,6 @@ ul.slides {
 	border:0;
 	border:1px solid #eee;
 }
-#contact-form input[type=text]:focus, #contact-form textarea:focus, input[type=email]:focus {
-	color:#fff;
-}
 #contact-form textarea {
 	height:170px;
 	resize:none;
