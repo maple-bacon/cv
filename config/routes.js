@@ -54,7 +54,7 @@ module.exports.routes = {
       title: 'Resume'
     }
   },
-  
+
   'post /contact': 'ContactController.send',
 
   'get /contact': {
