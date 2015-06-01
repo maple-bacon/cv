@@ -11,7 +11,7 @@
       <section class="content">
         <div class="anim-content">
           <div class="grid-full">
-            <h3 class="section-title"> Contacts</h3>
+            <h3 class="section-title">Contact</h3>
             <div class="clear"></div>
             <div class="separator"></div>
           </div>
@@ -44,11 +44,11 @@
             </div>
             <div class="grid-half">
               <div id="contact-form">
-                <div id="message"></div>
+                <%- partial('partials/flash') %>
                 <form method="post" action="/contact">
-                  <input name="name" type="text" id="name" placeholder="Name">
-                  <input name="email" type="text" id="email" placeholder="Email">
-                  <textarea name="message" id="message" placeholder="Message"></textarea>
+                  <input name="name" type="text" id="name" placeholder="Name" required>
+                  <input name="email" type="email" id="email" placeholder="Email" required>
+                  <textarea name="message" id="message" placeholder="Message" required></textarea>
                   <input type="submit" class="send_message" id="submit" value="Send Message">
                 </form>
               </div>

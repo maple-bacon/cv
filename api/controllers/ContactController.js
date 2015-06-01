@@ -36,11 +36,13 @@ module.exports = {
 		var promise = EmailService.deliver("contact", options, locals);
 
     promise.done(function (info) {
-      return res.send('send complete!');
+      req.flash('success', 'Your message has been sent.');
+      return res.redirect('/contact');
 		});
 
-    promise.fail(function (info) {
-      return res.send('send failed!');
+    promise.fail(function (error) {
+      req.flash('error', 'Failed to send message.');
+      return res.redirect('/contact');
 		});
   }
 };
