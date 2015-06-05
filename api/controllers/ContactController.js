@@ -15,16 +15,28 @@ module.exports = {
    * `ContactController.send()`
    */
   send: function (req, res) {
-    // req.params['message'] = "Hello";
-    // req.params['name'] = "Mark";
-    // req.params['email'] = "murphy.mark@live.ca";
     var params = req.params.all();
+
+    if (!params.name) {
+      req.flash('error', 'Please provide your name.');
+      return res.redirect('/contact');
+    }
+
+    if (!params.email) {
+      req.flash('error', 'Please provide your email.');
+      return res.redirect('/contact');
+    }
+
+    if (!params.message) {
+      req.flash('error', 'Please provide a message.');
+      return res.redirect('/contact');
+    }
 
 		var options = {
 			subject: 'Contact Form',
 			message: params.message,
 			from: params.name + ' <' + params.email + '>',
-			to: sails.config.mail.generalInqueriesAddress
+			to: sails.config.mail.to
 		};
 
 		var locals = {

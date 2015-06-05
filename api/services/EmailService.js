@@ -36,7 +36,7 @@ function send(view, options, locals, callback) {
     }
 
     // var options = {
-    //   from: sails.config.mail.defaultFromAddress,
+    //   from: sails.config.mail.from,
     //   to: 'murphy.mark@live.ca',//user.email,
     //   subject: 'Welcome',
     //   html: content.html,

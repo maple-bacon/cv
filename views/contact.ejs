@@ -1,63 +1,19 @@
-<!--================= main start ================-->
-<div id="main">
-<%- partial("partials/_header.ejs")%>
-<div class="clear"></div>
-<!--================= wrapper start ================-->
-<div id="wrapper">
-  <!--================= content-holder start ================-->
-  <div class="content-holder" id="dunamic-content">
-    <div class="container">
-      <!--content Start -->
-      <section class="content">
-        <div class="anim-content">
-          <div class="grid-full">
-            <h3 class="section-title">Contact</h3>
-            <div class="clear"></div>
-            <div class="separator"></div>
-          </div>
-          <div class="page-box">
-            <!--
-            <div class="grid-full">
-              <div class="map-box">
-                <div id="map_addresses" class="map"></div>
-              </div>
-            </div>
-            <div class="clear"></div>
-            <div class="separator"></div>
-           -->
-            <div class="grid-half">
-              <p class="align-text"></p>
-              <ul class="contact-list">
-                <li>
-                  <i class="fa fa-envelope-o"></i>
-                  <a href="#" class="transition">jason.lee.taylor@me.com</a>
-                </li>
-                <li>
-                  <i class="fa fa-home"></i>
-                  <span class="transition"> Halifax, Nova Scotia, Canada</span>
-                </li>
-              </ul>
-            </div>
-            <div class="grid-half">
-              <div id="contact-form">
-                <%- partial('partials/flash') %>
-                <form method="post" action="/contact">
-                  <input name="name" type="text" id="name" placeholder="Name" required>
-                  <input name="email" type="email" id="email" placeholder="Email" required>
-                  <textarea name="message" id="message" placeholder="Message" required></textarea>
-                  <input type="submit" class="send_message" id="submit" value="Send Message">
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--content end -->
+
+<section id="contact" class="page-section">
+  <%- partial("partials/_flash.ejs") %>
+  <form action="/contact" method="post" role="form">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
     </div>
-    <div class="clear"></div>
-    <!--================= Footer start ================-->
-    <%- partial("partials/_footer.ejs")%>
-    <!-- Content-holder end-->
-  </div>
-  <!-- Wrapper end -->
-</div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea class="form-control" id="message" name="message" placeholder="Message" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</section>

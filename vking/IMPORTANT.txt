@@ -1,3 +1,0 @@
-upload files from a folder 'site' to web server or local server to test
-
-Important! Dynamic loading content (Ajax), as well as contact and subscription form , video background work - only on a local server or host.

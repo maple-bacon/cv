@@ -48,9 +48,9 @@ module.exports = {
         pass: 'E4EI-btXxA242LO2K4faXg'
       }
     },
-
-    defaultFromAdress: 'Jason Taylor <no-reply@jasontaylor.ca>',
-    generalInqueriesAddress: 'Jason Taylor <jason.lee.taylor@me.com>'
+    
+    to: 'Jason Taylor <jason.lee.taylor@me.com>',
+    from: 'Jason Taylor <no-reply@jasontaylor.ca>'
   }
 
 };

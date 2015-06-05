@@ -35,8 +35,8 @@ module.exports = {
       }
     },
 
-    defaultFromAdress: 'Jason Taylor <no-reply@jasontaylor.ca>',
-    generalInqueriesAddress: 'Jason Taylor <jason.lee.taylor@me.com>'
+    to: 'Mark Murphy <murphy.mark@live.ca>',
+    from: 'Jason Taylor <no-reply@jasontaylor.ca>'
   }
 
 };

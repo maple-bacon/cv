@@ -15,13 +15,6 @@
 // (if you're using LESS with the built-in default config, you'll want
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
-  'css/font-awesome.min.css',
-  'css/reset.css',
-  'css/owl.carousel.css',
-  'css/magnific-popup.css',
-  'css/YTPlayer.css',
-  'css/style.css',
-
   'styles/**/*.css'
 ];
 
@@ -36,13 +29,19 @@ var jsFilesToInject = [
   // Dependencies like jQuery, or Angular are brought in here
   'js/dependencies/**/*.js',
 
-  // Custom ordering
-  'js/jquery.min.js',
-  'js/jpreloader.min.js',
-  'js/plugins.js',
-  'js/core.js',
-  'js/YTPlayer.js',
-  'js/scripts.js',
+  // Bootstrap js components
+  'components/bootstrap/js/transition.js',
+  'components/bootstrap/js/alert.js',
+  'components/bootstrap/js/button.js',
+  'components/bootstrap/js/carousel.js',
+  'components/bootstrap/js/collapse.js',
+  'components/bootstrap/js/dropdown.js',
+  'components/bootstrap/js/modal.js',
+  'components/bootstrap/js/tooltip.js',
+  'components/bootstrap/js/popover.js',
+  'components/bootstrap/js/scrollspy.js',
+  'components/bootstrap/js/tab.js',
+  'components/bootstrap/js/affix.js',
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
