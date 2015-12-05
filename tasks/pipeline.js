@@ -15,13 +15,6 @@
 // (if you're using LESS with the built-in default config, you'll want
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
-  'css/font-awesome.min.css',
-  'css/reset.css',
-  'css/owl.carousel.css',
-  'css/magnific-popup.css',
-  'css/YTPlayer.css',
-  'css/style.css',
-
   'styles/**/*.css'
 ];
 
