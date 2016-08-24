@@ -23,7 +23,8 @@ module.exports = {
 		var options = {
 			subject: 'Contact Form',
 			message: params.message,
-			from: params.name + ' <' + params.email + '>',
+      from: params.name + ' <mail@jason-taylor.ca>',
+			replyTo: params.name + ' <' + params.email + '>',
 			to: sails.config.mail.generalInqueriesAddress
 		};
 

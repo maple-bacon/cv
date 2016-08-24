@@ -26,13 +26,13 @@ module.exports = {
      * NodeMailer SMTP configuration settings
      * See <https://github.com/andris9/nodemailer-smtp-transport#usage>
      */
-    smtp: {
-      host: 'smtp.mandrillapp.com',
-      port: 587,
-      auth: {
-        user: 'jason.lee.taylor@me.com',
-        pass: 'E4EI-btXxA242LO2K4faXg'
-      }
+     smtp: {
+       host: 'smtp.sparkpostmail.com',
+       port: 587,
+       auth: {
+         user: 'SMTP_Injection',
+         pass: process.env.SPARKPOST_API_KEY
+       }
     },
 
     defaultFromAdress: 'Jason Taylor <no-reply@jasontaylor.ca>',

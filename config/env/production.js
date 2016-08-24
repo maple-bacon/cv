@@ -41,11 +41,11 @@ module.exports = {
      * See <https://github.com/andris9/nodemailer-smtp-transport#usage>
      */
     smtp: {
-      host: 'smtp.mandrillapp.com',
+      host: 'smtp.sparkpostmail.com',
       port: 587,
       auth: {
-        user: 'jason.lee.taylor@me.com',
-        pass: 'E4EI-btXxA242LO2K4faXg'
+        user: 'SMTP_Injection',
+        pass: process.env.SPARKPOST_API_KEY
       }
     },
 

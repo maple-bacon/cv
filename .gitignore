@@ -31,3 +31,6 @@ viking
 
 # ignore temp files
 .tmp
+
+# Envronment Variables
+.env

@@ -43,6 +43,10 @@ function send(view, options, locals, callback) {
     //   text: content.text
     // };
 
+    // options.sender || (
+    //   options.sender = "postmaster@jason-taylor.ca"
+    // )
+
     options.html = content.html;
     options.text = content.text;
 
